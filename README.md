@@ -1,87 +1,65 @@
-# Observability Stack for DevOps (Prometheus + Grafana + Loki + Tempo + OpenTelemetry)
+# 📌 Observability Stack for DevOps (Prometheus + Grafana + Loki + Tempo + OpenTelemetry)
+
+---
 
 ## 📌 Overview
-This project implements a complete **cloud-native observability system** for monitoring, logging, and tracing containerized applications using industry-standard tools.
+This project implements a complete **cloud-native observability system** for monitoring, logging, and tracing containerized applications using industry-standard DevOps tools.
 
-It provides a unified platform to observe:
-- Metrics (Prometheus)
-- Logs (Loki + Promtail)
-- Traces (Tempo + OpenTelemetry)
-- Dashboards (Grafana)
+It provides a unified observability platform to monitor modern distributed systems using the **3 pillars of observability**:
+
+- 📊 Metrics → Prometheus  
+- 📄 Logs → Loki + Promtail  
+- 🔍 Traces → Tempo + OpenTelemetry  
+- 📈 Visualization → Grafana  
 
 ---
 
 ## 🏗️ Architecture
 
-Application → OpenTelemetry Collector →  
-├── Metrics → Prometheus → Grafana  
-├── Logs → Loki → Grafana  
-└── Traces → Tempo → Grafana  
+```text
+Application
+   │
+   ▼
+OpenTelemetry Collector
+   ├── Metrics → Prometheus → Grafana
+   ├── Logs → Loki → Grafana
+   └── Traces → Tempo → Grafana
 
-Additional:
-- cAdvisor → Container metrics
-- Node Exporter → Host metrics
+Supporting Components:
+- Node Exporter → Host-level metrics
+- cAdvisor → Container-level metrics
 
----💡 Key Features
-Centralized logging system using Loki + Promtail
-Real-time metrics monitoring using Prometheus     
-Distributed tracing system using Tempo + OpenTelemetry
-Unified visualization using Grafana dashboards
+🛠️ Tech Stack
+Docker & Docker Compose
+Prometheus
+Grafana
+Loki
+Promtail
+Tempo
+OpenTelemetry Collector
+Node Exporter
+cAdvisor
+
+
+🎯 Features
+Centralized logging using Loki + Promtail
+Real-time metrics monitoring using Prometheus
+Distributed tracing using Tempo + OpenTelemetry
+Unified dashboards using Grafana
 Container-level monitoring using cAdvisor
-Host-level monitoring using Node Exporter     
-Fully containerized setup using Docker Compose
-
----
-
-🎯 Key Learnings
-Built end-to-end observability pipeline for cloud-native systems
-Integrated metrics, logs, and traces in a single platform
-Implemented OpenTelemetry-based distributed tracing
-Designed production-like DevOps monitoring architecture
-Improved debugging and troubleshooting efficiency using centralized observability
----
+Host-level monitoring using Node Exporter
+Fully containerized observability stack using Docker Compose
 
 
-## 🛠️ Tech Stack
-
-- Docker & Docker Compose
-- Prometheus
-- Grafana
-- Loki
-- Promtail
-- Tempo
-- OpenTelemetry Collector
-- cAdvisor
-- Node Exporter
-
----
-
-## 🎯 Features
-
-- Centralized logging system (Loki)
-- Real-time metrics monitoring (Prometheus)
-- Distributed tracing (Tempo)
-- Unified visualization (Grafana dashboards)
-- Container-level monitoring (cAdvisor)
-- Host-level monitoring (Node Exporter)
-- Fully containerized setup using Docker Compose
-
----
-
-## 🚀 How to Run
-
-```bash
+🚀 How to Run
 git clone https://github.com/Lingaraj-1/observability-stack-monitoring.git
 cd observability-stack-monitoring
 docker-compose up -d
-
----
 
 🌐 Access Services
 Grafana → http://localhost:3000
 Prometheus → http://localhost:9090
 
----
 📊 Dashboards
 
 The following dashboards are available in Grafana:
@@ -91,13 +69,14 @@ Logs Dashboard (Loki)
 Distributed Tracing Dashboard (Tempo)
 Prometheus Targets & Metrics
 
-📌 Add screenshots here:
+📌 Add screenshots in /screenshots folder:
 
 Grafana Infrastructure Dashboard
 Loki Logs View
 Tempo Traces
 Prometheus Targets
----
+
+
 📁 Project Structure
 .
 ├── docker-compose.yml
@@ -109,23 +88,12 @@ Prometheus Targets
 ├── notes-app/
 └── screenshots/
 
----
-
-💡 Key Features
-Centralized logging system using Loki + Promtail
-Real-time metrics monitoring using Prometheus
-Distributed tracing system using Tempo + OpenTelemetry
-Unified visualization using Grafana dashboards
-Container-level monitoring using cAdvisor
-Host-level monitoring using Node Exporter
-Fully containerized setup using Docker Compose
-
----
-
-🎯 Key Learnings
+💡 Key Learnings
 Built end-to-end observability pipeline for cloud-native systems
-Integrated metrics, logs, and traces in a single platform
+Integrated metrics, logs, and traces into a single platform
 Implemented OpenTelemetry-based distributed tracing
 Designed production-like DevOps monitoring architecture
-Improved debugging and troubleshooting efficiency using centralized observability
----
+Improved debugging and troubleshooting using centralized observability
+Gained hands-on experience with modern SRE/DevOps observability stack
+
+
