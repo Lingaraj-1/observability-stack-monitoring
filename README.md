@@ -24,6 +24,9 @@ OpenTelemetry Collector
    ├── Metrics → Prometheus → Grafana
    ├── Logs → Loki → Grafana
    └── Traces → Tempo → Grafana
+---
+
+
 
 Supporting Components:
 - Node Exporter → Host-level metrics
