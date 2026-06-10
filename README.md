@@ -135,9 +135,4 @@ The following dashboards are available in Grafana:
 
 ---
 
-## 👨‍💻 Author
-
-**Lingaraj Hottiyavar**
-
-DevOps Engineer | Cloud & Observability Enthusiast
 
