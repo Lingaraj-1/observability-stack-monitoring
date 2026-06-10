@@ -88,6 +88,20 @@ Prometheus Targets
 ├── notes-app/
 └── screenshots/
 
+
+## 📸 Screenshots
+
+### 🖥️ Host Metrics Dashboard
+![Host Metrics](screenshots/grafana-host-cpu-memory-disk.png)
+
+### 📦 Container Metrics Dashboard
+![Container Metrics](screenshots/grafana-container-cpu-memory.png)
+
+### 💾 Volume Metrics Dashboard
+![Volume Metrics](screenshots/grafana-volume-disk-usage.png)
+
+
+
 💡 Key Learnings
 Built end-to-end observability pipeline for cloud-native systems
 Integrated metrics, logs, and traces into a single platform
