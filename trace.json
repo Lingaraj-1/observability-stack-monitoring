@@ -1,0 +1,50 @@
+{
+    "resourceSpans": [{
+      "resource": {
+        "attributes": [{
+          "key": "service.name",
+          "value": { "stringValue": "notes-app" }
+        }]
+      },
+      "scopeSpans": [{
+        "spans": [{
+          "traceId": "aaaabbbbccccdddd1111222233334444",
+          "spanId": "1111222233334444",
+          "name": "GET /api/notes",
+          "kind": 2,
+          "startTimeUnixNano": "1700000000000000000",
+          "endTimeUnixNano": "1700000000150000000",
+          "attributes": [{
+            "key": "http.method",
+            "value": { "stringValue": "GET" }
+          },
+          {
+            "key": "http.route",
+            "value": { "stringValue": "/api/notes" }
+          },
+          {
+            "key": "http.status_code",
+            "value": { "intValue": "200" }
+          }],
+          "status": { "code": 1 }
+        },
+        {
+          "traceId": "aaaabbbbccccdddd1111222233334444",
+          "spanId": "5555666677778888",
+          "parentSpanId": "1111222233334444",
+          "name": "SELECT notes FROM database",
+          "kind": 3,
+          "startTimeUnixNano": "1700000000020000000",
+          "endTimeUnixNano": "1700000000120000000",
+          "attributes": [{
+            "key": "db.system",
+            "value": { "stringValue": "sqlite" }
+          },
+          {
+            "key": "db.statement",
+            "value": { "stringValue": "SELECT * FROM notes" }
+          }]
+        }]
+      }]
+    }]
+  }
