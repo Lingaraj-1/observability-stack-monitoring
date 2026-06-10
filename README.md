@@ -89,13 +89,24 @@ Prometheus Targets
 └── screenshots/
 
 
+## 📸 Screenshots
+
+---
+
 ### 🖥️ Host Metrics Dashboard
+
 ![Host Metrics](https://raw.githubusercontent.com/Lingaraj-1/observability-stack-monitoring/main/screenshots/grafana-host-cpu-memory-disk.png)
 
+---
+
 ### 📦 Container Metrics Dashboard
+
 ![Container Metrics](https://raw.githubusercontent.com/Lingaraj-1/observability-stack-monitoring/main/screenshots/grafana-container-cpu-memory.png)
 
+---
+
 ### 💾 Volume Metrics Dashboard
+
 ![Volume Metrics](https://raw.githubusercontent.com/Lingaraj-1/observability-stack-monitoring/main/screenshots/grafana-volume-disk-usage.png)
 
 
